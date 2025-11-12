@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photography Collection — Project Details</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* === LANDSCAPE PHOTO GALLERY STYLES === */
+    .gallery-header {
+      margin: 24px 0;
+    }
+
+    .gallery-intro {
+      color: var(--muted, #666);
+      line-height: 1.6;
+      max-width: 70ch;
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .photo-card {
+      background: var(--card-bg, #111);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .photo-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    .photo-card img {
+      display: block;
+      width: 100%;
+      height: 180px; /* landscape proportion */
+      object-fit: cover;
+    }
+
+    .photo-meta {
+      padding: 12px 14px;
+      background: rgba(255,255,255,0.02);
+    }
+
+    .photo-meta h4 {
+      margin: 0 0 4px 0;
+      font-size: 1rem;
+      color: #fff;
+    }
+
+    .photo-meta p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--muted, #aaa);
+    }
+
+    /* Responsive grid */
+    @media (max-width: 900px) {
+      .photo-grid { grid-template-columns: repeat(2, 1fr); }
+      .photo-card img { height: 160px; }
+    }
+    @media (max-width: 600px) {
+      .photo-grid { grid-template-columns: 1fr; }
+      .photo-card img { height: 200px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header with back link -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="home.html#projects" class="brand">← Back to Portfolio</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="section container">
+    <h2>Photography Collection</h2>
+
+    <!-- Intro about your photography hobby -->
+    <div class="gallery-header">
+      <p class="gallery-intro">
+        Photography is one of my favorite creative hobbies. I love capturing landscapes, light, and everyday life moments from my own perspective.  
+        Below are some of my best landscape shots, each telling a small story through color, light, and emotion.
+      </p>
+    </div>
+
+    <!-- Landscape photo gallery -->
+    <section class="photo-grid" aria-label="Photography gallery">
+      <figure class="photo-card">
+        <img src="assets/photo1.jpg" alt="Golden sunset landscape with calm water">
+        <figcaption class="photo-meta">
+          <h4>Tua Pek Kong</h4>
+          <p>A Tua Pek Kong temple, honoring a local Indonesian Chinese guardian spirit.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="photo-card">
+        <img src="assets/photo2.jpg" alt="Green hills and cloudy sky in the afternoon">
+        <figcaption class="photo-meta">
+          <h4>Samaypur Badli Metro Station</h4>
+          <p>Sunset glow at Samaypur Badli Metro Station, where the city slows under golden light.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="photo-card">
+        <img src="assets/photo3.jpg" alt="Beach waves under blue sky">
+        <figcaption class="photo-meta">
+          <h4>Majnu Ka Tilla</h4>
+          <p>Snack seller at Majnu Ka Tilla — faster than Wi-Fi when customers appear.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="photo-card">
+        <img src="assets/photo4.jpg" alt="Night street lights reflecting on wet road">
+        <figcaption class="photo-meta">
+          <h4>Indonesian Students Association in India</h4>
+          <p>Evening picnic with the Indonesian Students Association (PPI India) at Lodhi Garden.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="photo-card">
+        <img src="assets/photo5.jpg" alt="Golden rice fields during sunset">
+        <figcaption class="photo-meta">
+          <h4>Connaught Place</h4>
+          <p>Street view at Connaught Place, New Delhi — vibrant crowds and city lights in motion.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="photo-card">
+        <img src="assets/photo6.jpg" alt="Mountain range during sunrise">
+        <figcaption class="photo-meta">
+          <h4>Chadni Chowk</h4>
+          <p>Evening traffic at Chandni Chowk — where patience is tested and horns never rest.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="photo-card">
+        <img src="assets/photo7.jpg" alt="Bridge over calm river at dusk">
+        <figcaption class="photo-meta">
+          <h4>Jama Masjid Gate</h4>
+          <p>The grand gate of Jama Masjid — standing strong for centuries, unlike my phone battery.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="photo-card">
+        <img src="assets/photo8.jpg" alt="Forest path covered with morning fog">
+        <figcaption class="photo-meta">
+          <h4>Red Fort Show</h4>
+          <p>Red Fort anniversary show — where Delhi shines brighter than my future.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="photo-card">
+        <img src="assets/photo9.jpg" alt="Open field with cloudy dramatic sky">
+        <figcaption class="photo-meta">
+          <h4>Beloved Hometown</h4>
+          <p>My hometown beach in Tanjung Balai Karimun — peaceful view, noisy gossip.</p>
+        </figcaption>
+      </figure>
+    </section>
+
+    <div style="margin-top: 28px;">
+      <p style="color: var(--muted, #888);">
+        This collection is part of my personal journey in photography — experimenting with light, timing, and composition.
+      </p>
+      <a href="home.html#contact" class="btn primary">Contact →</a>
+    </div>
+  </main>
+
+</body>
+</html>

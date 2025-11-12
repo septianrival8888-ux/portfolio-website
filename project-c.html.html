@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>C Language Basics — Project Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="home.html#projects" class="brand">← Back to Portfolio</a>
+    </div>
+  </header>
+
+  <main class="section container">
+    <h2>C Language Basics</h2>
+    <p>
+      This project showcases some of my early C programming exercises while learning the fundamentals of computer science.
+      These programs helped me understand variables, conditionals, and basic arithmetic operations.
+    </p>
+
+    <h3>Example: Celsius to Fahrenheit Converter</h3>
+
+    <pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    float celsius, fahrenheit;
+
+    printf("Enter temperature in Celsius: ");
+    scanf("%f", &celsius);
+
+    fahrenheit = (celsius * 9 / 5) + 32;
+
+    printf("Temperature in Fahrenheit: %.2f\n", fahrenheit);
+    return 0;
+}
+    </code></pre>
+
+    <p>
+      This simple program takes a temperature input in Celsius and converts it to Fahrenheit.
+      It helped me understand how user input, arithmetic operations, and formatted output work in C.
+    </p>
+
+    <h3>Other Programs Included:</h3>
+    <ul>
+      <li>Area of Circle Calculator</li>
+      <li>Even or Odd Checker</li>
+      <li>Simple Interest Calculator</li>
+    </ul>
+
+    <a href="home.html#projects" class="btn outline" style="margin-top:20px;">← Back to Portfolio</a>
+  </main>
+
+</body>
+</html>
